@@ -21,7 +21,7 @@
     <main>
       <section class="hero">
         <div class="hero__image-container">
-          <img class="hero__image" alt="MaciejPoczatko portfolio" />
+          <img src="../assets/img/maciej.jpg" class="hero__image" alt="MaciejPoczatko portfolio" />
           <span class="hero__hello"> Hello. 🤟 </span>
         </div>
         <div class="hero__descrition">
@@ -31,9 +31,9 @@
           </h1>
           <p class="hero__paragraph">
             You might be interested in checking the list of
-            <a href="#skills"> skills</a>. Don’t forget to have a glimpse at
-            <a href="#projects">my projects</a>. Currently I’m looking for a new
-            challenges so if you have one - <a href="#contact">contact me 😊</a>
+            <a class="hero__link" href="#skills"> skills</a>. Don’t forget to have a glimpse at
+            <a class="hero__link" href="#projects">my projects</a>. Currently I’m looking for a new
+            challenges so if you have one - <a class="hero__link" href="#contact">contact me 😊</a>
           </p>
           <a class="hero__contact" href="mailto:maxpoczatko@gmail.com">
             maxpoczatko@gmail.com
@@ -41,11 +41,11 @@
         </div>
       </section>
       <section class="skills" id="skills">
-        <h2>My skills</h2>
+        <h2 class="skills__header">My skills</h2>
         <article class="skills-section">
           <span class="skills-section__emoji">👍</span>
           <h3 class="skills-section__header">Working knowledge</h3>
-          <ul class="skills-list">
+          <ul class="skills-list ">
             <li class="skills-list__item">JavaScript</li>
             <li class="skills-list__item">CSS</li>
             <li class="skills-list__item">JS</li>
@@ -57,7 +57,7 @@
         <article class="skills-section">
           <span class="skills-section__emoji">😒</span>
           <h3 class="skills-section__header">Know something about</h3>
-          <ul class="skills-list">
+          <ul class="skills-list skills-list--blue">
             <li class="skills-list__item">Semantic HTML5</li>
             <li class="skills-list__item">SFlexbox</li>
             <li class="skills-list__item">JS</li>
@@ -69,7 +69,7 @@
         <article class="skills-section">
           <span class="skills-section__emoji">🤦‍♀️</span>
           <h3 class="skills-section__header">Want to learn</h3>
-          <ul class="skills-list">
+          <ul class="skills-list skills-list--dot">
             <li class="skills-list__item">React</li>
             <li class="skills-list__item">Node</li>
             <li class="skills-list__item">SSR</li>
