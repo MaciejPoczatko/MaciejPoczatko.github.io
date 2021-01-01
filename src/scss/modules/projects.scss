@@ -1,0 +1,70 @@
+.projects{
+    padding: 64px 16px 88px;
+    &__description{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &__header{
+        font-size: 36px;
+        line-height: 48px;
+        color: $textDark;
+        text-align: center;
+    }
+
+}
+.project{
+    background: $gray;
+    border-radius: 16px;
+    overflow: hidden;
+    color: $lightConsole;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    font-family: Roboto Mono;
+    box-shadow: 0px 4px 16px rgba($color: #000000, $alpha: 1.0);
+    &__circle{
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $lightGray;
+        margin: 8px;
+
+    }
+    &__content{
+        padding: 24px 16px;
+
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: 102px 1fr;
+        column-gap: 12px;
+
+    }
+    &__label{
+        display: block;
+        text-align: right;
+        color: $console;
+    }
+    &__link{
+        color: $linkConsole;
+    }
+    &__title{
+
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 24px;
+        color: white;
+
+    }
+    &__window{
+        height: 40px;
+        background: $darkGray;
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 16px;
+    }
+}
