@@ -1,7 +1,20 @@
 .hero{
     padding: 74px 16px 88px;
+    @media (min-width: $tablet) {
+        max-width: 768px;
+        margin: 0 auto;
+    } 
+    @media (min-width: $desktop) {
+        max-width: 100%;
+        padding-bottom: 176px;
+    } 
+    &__buble {
+        position: absolute;
+        left: calc(50% + 90px);
+        top: -26px;
+    }
     &__contact{
-        //align-items: center;
+        align-items: center;
         border-radius: 64px;
         color: white;
         background: $lightBlue;
@@ -11,7 +24,11 @@
         font-size: 20px;
         line-height: 40px;
         text-decoration: none;
+        text-align: center;
 
+    }
+    &__descrition {
+        text-align: center;
     }
     &__paragraph{
         font-weight: 300;
@@ -19,6 +36,10 @@
         line-height: 32px; 
         text-align: center;
         margin-bottom: 48px;
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            line-height: 40px;
+        }
     }
     &__image{
         box-sizing: content-box;
@@ -26,20 +47,51 @@
         height: 96px;
         border: 16px solid #f6f9fd;
         border-radius: 50%;
+        @media (min-width: $desktop) {
+            width: 178px;
+            height: 178px;
+            border: 24px solid #f6f9fd;
+        }
     }
     &__hello{
         display: none;
+        @media (min-width: $desktop) {
+            display: block;
+            background: $blue;
+            color: white;
+            padding: 16px 19px;
+            border-radius: 16px;
+            font-weight: bold;
+            font-size: 32px;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 32px;
+                display: block;
+                width: 17.42px;
+                height: 22.66px;
+                background: url('../assets/img/Speech_cloud.svg');
+            }
+        }
     }
     &__image-container {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
     &__header {
         font-size: 26px;
         line-height: 32px;
         text-align: center;
         color: $textDark;
+        margin: 0 0 64px;
+        @media (min-width: $desktop) {
+            font-size: 32px;
+            line-height: 40px;
+        }
     }
     &__special{
         color: $blue;
@@ -48,9 +100,5 @@
         font-weight: bold;
         color: lightBlue;
         text-decoration: none;
-
-    
-    }
-
-
+        }
 }

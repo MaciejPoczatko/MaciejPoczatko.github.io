@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,8 +21,14 @@
     <main>
       <section class="hero">
         <div class="hero__image-container">
-          <img src="../assets/img/maciej.jpg" class="hero__image" alt="MaciejPoczatko portfolio" />
-          <span class="hero__hello"> Hello. 🤟 </span>
+          <img
+            src="../assets/img/maciej.jpg"
+            class="hero__image"
+            alt="MaciejPoczatko portfolio"
+          />
+          <span class="hero__buble">
+            <span class="hero__hello"> Hello. 🤟 </span>
+          </span>
         </div>
         <div class="hero__descrition">
           <h1 class="hero__header">
@@ -31,9 +37,11 @@
           </h1>
           <p class="hero__paragraph">
             You might be interested in checking the list of
-            <a class="hero__link" href="#skills"> skills</a>. Don’t forget to have a glimpse at
-            <a class="hero__link" href="#projects">my projects</a>. Currently I’m looking for a new
-            challenges so if you have one - <a class="hero__link" href="#contact">contact me 😊</a>
+            <a class="hero__link" href="#skills"> skills</a>. Don’t forget to
+            have a glimpse at
+            <a class="hero__link" href="#projects">my projects</a>. Currently
+            I’m looking for a new challenges so if you have one -
+            <a class="hero__link" href="#contact">contact me 😊</a>
           </p>
           <a class="hero__contact" href="mailto:maxpoczatko@gmail.com">
             maxpoczatko@gmail.com
@@ -42,40 +50,42 @@
       </section>
       <section class="skills" id="skills">
         <h2 class="skills__header">My skills</h2>
-        <article class="skills-section">
-          <span class="skills-section__emoji">👍</span>
-          <h3 class="skills-section__header">Working knowledge</h3>
-          <ul class="skills-list ">
-            <li class="skills-list__item">JavaScript</li>
-            <li class="skills-list__item">CSS</li>
-            <li class="skills-list__item">JS</li>
-            <li class="skills-list__item">PWA</li>
-            <li class="skills-list__item">CSS</li>
-            <li class="skills-list__item">SASS</li>
-          </ul>
-        </article>
-        <article class="skills-section">
-          <span class="skills-section__emoji">😒</span>
-          <h3 class="skills-section__header">Know something about</h3>
-          <ul class="skills-list skills-list--blue">
-            <li class="skills-list__item">Semantic HTML5</li>
-            <li class="skills-list__item">SFlexbox</li>
-            <li class="skills-list__item">JS</li>
-            <li class="skills-list__item">GIT</li>
-            <li class="skills-list__item">CSS</li>
-            <li class="skills-list__item">SASS</li>
-          </ul>
-        </article>
-        <article class="skills-section">
-          <span class="skills-section__emoji">🤦‍♀️</span>
-          <h3 class="skills-section__header">Want to learn</h3>
-          <ul class="skills-list skills-list--dot">
-            <li class="skills-list__item">React</li>
-            <li class="skills-list__item">Node</li>
-            <li class="skills-list__item">SSR</li>
-            <li class="skills-list__item">Gatsby</li>
-          </ul>
-        </article>
+        <div class="skills-columns">
+          <article class="skills-section">
+            <span class="skills-section__emoji">👍</span>
+            <h3 class="skills-section__header">Working knowledge</h3>
+            <ul class="skills-list">
+              <li class="skills-list__item">JavaScript</li>
+              <li class="skills-list__item">CSS</li>
+              <li class="skills-list__item">JS</li>
+              <li class="skills-list__item">PWA</li>
+              <li class="skills-list__item">CSS</li>
+              <li class="skills-list__item">SASS</li>
+            </ul>
+          </article>
+          <article class="skills-section">
+            <span class="skills-section__emoji">😒</span>
+            <h3 class="skills-section__header">Know something about</h3>
+            <ul class="skills-list skills-list--blue">
+              <li class="skills-list__item">Semantic HTML5</li>
+              <li class="skills-list__item">SFlexbox</li>
+              <li class="skills-list__item">JS</li>
+              <li class="skills-list__item">GIT</li>
+              <li class="skills-list__item">CSS</li>
+              <li class="skills-list__item">SASS</li>
+            </ul>
+          </article>
+          <article class="skills-section">
+            <span class="skills-section__emoji">🤦‍♀️</span>
+            <h3 class="skills-section__header">Want to learn</h3>
+            <ul class="skills-list skills-list--dot">
+              <li class="skills-list__item">React</li>
+              <li class="skills-list__item">Node</li>
+              <li class="skills-list__item">SSR</li>
+              <li class="skills-list__item">Gatsby</li>
+            </ul>
+          </article>
+        </div>
       </section>
       <section class="projects" id="projects">
         <h2 class="projects__header">Recent projects</h2>
@@ -87,34 +97,101 @@
           <article class="project">
             <div class="project__window">
               <span class="project__circle"></span>
-              <span class="project__circle"></span>  
-              <span class="project__circle"></span>    
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
             </div>
             <div class="project__content">
-              <img src="../assets/img/github.svg" alt="">
-            <h3 class="project__grid project__title">
-              <span class="project__label"> project </span> podlaski git</h3>
-            <p class="project__grid">
-              <span class="project__label">description</span>
-              <span>podlaskie aliasy dlagitowych kommend</span>
-            </p>
-            <p class="project__grid">
-              <span class="project__label">demo</span>
-              <span> 
-                <a class="project__link" href="#" title="podlaski git -demo"> 
-                  &lt;see_here&gt;
-                </a>
-              </span>
-            </p>
-            <p class="project__grid">
-              <span class="project__label">github</span>
-              <span>
-                <a class="project__link" href="#" title="podlaski git -code">
-                  &lt; source_code &gt; </a
-                >
-              </span>
-            </p>
-          </div>
+              <img src="../assets/img/github.svg" alt="" />
+              <h3 class="project__grid project__title">
+                <span class="project__label"> project </span> podlaski git
+              </h3>
+              <p class="project__grid">
+                <span class="project__label">description</span>
+                <span>podlaskie aliasy dlagitowych kommend</span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">demo</span>
+                <span>
+                  <a class="project__link" href="#" title="podlaski git -demo">
+                    &lt;see_here&gt;
+                  </a>
+                </span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">github</span>
+                <span>
+                  <a class="project__link" href="#" title="podlaski git -code">
+                    &lt; source_code &gt;
+                  </a>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project__window">
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+            </div>
+            <div class="project__content">
+              <img src="../assets/img/github.svg" alt="" />
+              <h3 class="project__grid project__title">
+                <span class="project__label"> project </span> podlaski git
+              </h3>
+              <p class="project__grid">
+                <span class="project__label">description</span>
+                <span>podlaskie aliasy dlagitowych kommend</span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">demo</span>
+                <span>
+                  <a class="project__link" href="#" title="podlaski git -demo">
+                    &lt;see_here&gt;
+                  </a>
+                </span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">github</span>
+                <span>
+                  <a class="project__link" href="#" title="podlaski git -code">
+                    &lt; source_code &gt;
+                  </a>
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project__window">
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+              <span class="project__circle"></span>
+            </div>
+            <div class="project__content">
+              <img src="../assets/img/github.svg" alt="" />
+              <h3 class="project__grid project__title">
+                <span class="project__label"> project </span> podlaski git
+              </h3>
+              <p class="project__grid">
+                <span class="project__label">description</span>
+                <span>podlaskie aliasy dlagitowych kommend</span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">demo</span>
+                <span>
+                  <a class="project__link" href="#" title="podlaski git -demo">
+                    &lt;see_here&gt;
+                  </a>
+                </span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">github</span>
+                <span>
+                  <a class="project__link" href="#" title="podlaski git -code">
+                    &lt; source_code &gt;
+                  </a>
+                </span>
+              </p>
+            </div>
           </article>
         </div>
       </section>
@@ -127,21 +204,33 @@
           <ul class="socials">
             <li class="socials__item">
               <a class="socials__link" href="https://github.com">
-                <img src="../assets/img/github-icon.svg" class="socials__icon" alt="MP_github" />
+                <img
+                  src="../assets/img/github-icon.svg"
+                  class="socials__icon"
+                  alt="MP_github"
+                />
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://instagram.com">
-                <img src="../assets/img/insta-icon.svg" class="socials__icon" alt="MP_instagram" />
+                <img
+                  src="../assets/img/insta-icon.svg"
+                  class="socials__icon"
+                  alt="MP_instagram"
+                />
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://facebook.com">
-                <img src="../assets/img/fb-icon.svg" class="socials__icon" alt="MP_fb" />
+                <img
+                  src="../assets/img/fb-icon.svg"
+                  class="socials__icon"
+                  alt="MP_fb"
+                />
               </a>
             </li>
           </ul>
-          <a class="hero__contact" href="mailto:maxpoczatko@gmail.com">
+          <a class="socials__contact" href="mailto:maxpoczatko@gmail.com">
             maxpoczatko@gmail.com
           </a>
         </div>

@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
     margin: 56px 64px;
+    @media (min-width: $desktop) {
+        margin: 0%;
+    }
     &__item {
         margin: 0 12px;
     }
@@ -20,5 +23,21 @@
 
 
 
+    }
+    &__contact {
+        align-items: center;
+        border-radius: 64px;
+        color: white;
+        background: $lightBlue;
+        display: inline-block;
+        padding: 4px 24px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 40px;
+        text-decoration: none;
+        text-align: center;
+    }
+    &__descrition {
+        text-align: center;
     }
 }
