@@ -1,12 +1,6 @@
 import '../scss/main.scss';
 
 console.log('🍕')
-fetch('https://api.github.com/users/maciejpoczatko/repos?sor=created&direction=acs')
-.then((res) => res.json())
-.then((res) => {
-  console.log(res);
-})
-.catch((e) => console.log(e));
 
 
 
@@ -35,7 +29,8 @@ fetch('https://api.github.com/users/maciejpoczatko/repos?sor=created&direction=a
           <p class="project__grid">
             <span class="project__label">demo</span>
             <span>
-            &lt; <a class="project__link" href="${homepage}" title="${name}">
+            &lt; <a target="_blank"
+            rel="noopener noreferrer" class="project__link" href="${homepage}" title="${name}">
                 see_here
               </a>&gt;
             </span>
@@ -43,7 +38,8 @@ fetch('https://api.github.com/users/maciejpoczatko/repos?sor=created&direction=a
           <p class="project__grid">
             <span class="project__label">github:</span>
             <span>
-              &lt; <a class="project__link" 
+              &lt; <a target="_blank"
+              rel="noopener noreferrer" class="project__link" 
               href="${html_url}" 
               title="${name}">
                  source_code 
