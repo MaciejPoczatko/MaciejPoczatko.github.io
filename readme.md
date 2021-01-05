@@ -1,4 +1,4 @@
-![cover](https://MaciejPoczatko.github.io/og.png)
+![cover](https://raw.githubusercontent.com/MaciejPoczatko/maciejpoczatko.github.io/source/public/og.png)
 
 # MaciejPoczatko - Junior Frontend Developer
 
