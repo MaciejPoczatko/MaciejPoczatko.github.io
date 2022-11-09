@@ -1,6 +1,6 @@
 ![cover](https://raw.githubusercontent.com/MaciejPoczatko/maciejpoczatko.github.io/source/public/og.png)
 
-# MaciejPoczatko - Junior Frontend Developer
+# MP
 
 Simple portfolio webside.
 
